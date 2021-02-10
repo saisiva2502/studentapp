@@ -73,6 +73,19 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+        <repository>
+            <id>nexus-server</id>
+            <name>Nexus Releases</name>
+            <url>http://35.245.88.66:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-server</id>
+            <name>Nexus Snapshot Releases</name>
+            <url>http://35.245.88.66:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
   <modules>
     <module>mavenrepo-master</module>
 </modules>

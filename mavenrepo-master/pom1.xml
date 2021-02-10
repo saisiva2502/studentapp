@@ -19,12 +19,7 @@
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
-       </plugin> 
-     <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.8.2</version>
-     </plugin>
-
+      </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>2.6</version>
@@ -37,14 +32,14 @@
   </build>
    <distributionManagement>
         <repository>
-            <id>nexus-server</id>
-            <name>Nexus Releases</name>
-            <url>http://35.245.88.66:8081/repository/maven-releases/</url>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://10.128.0.10:8081/repository/student-rel/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-server</id>
-            <name>Nexus Snapshot Releases</name>
-            <url>http://35.245.88.66:8081/repository/maven-snapshots/</url>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://10.128.0.10:8081/repository/student-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
